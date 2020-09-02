@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El-jardin-de-los-senderos-que-bifurcan.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="cree-una-p%C3%A1gina-web-elaborada-principalmente-con-markdown-que-contenga-elementos-multimedia-no-enlaces-para-responder-las-siguientes-preguntas">Cree una página web, elaborada principalmente con Markdown, que contenga elementos multimedia (no enlaces) para responder las siguientes preguntas:</h1>
+<h2 id="a-%C2%BFcu%C3%A1l-es-el-hecho-hist%C3%B3rico-que-desencadena-la-narrativa-del-cuento">a. ¿Cuál es el hecho histórico que desencadena la narrativa del cuento?</h2>
+<p><img src="pictures/greatwar.jpg" alt="Primera Guerra Mundial"></p>
+<h2 id="b-ubica-en-el-mapa-d%C3%B3nde-esta-la-locaci%C3%B3n-secreta-que-se-menciona-al-inicio-del-cuento">b. Ubica en el mapa dónde esta la locación secreta que se menciona al inicio del cuento.</h2>
+<p><img src="pictures/albert-googlemaps.png" alt="Albert">
+<img src="pictures/albert-city.png" alt="Albert City"></p>
+<h2 id="c-%C2%BFqu%C3%A9-relaci%C3%B3n-tiene-lochnagar-mine-sobre-el-contexto-hist%C3%B3rico">c. ¿Qué relación tiene Lochnagar mine sobre el contexto histórico?</h2>
+<p>Lo que relata Borges, es el preludio a la batalla de Albert, que es la primera parte de la batalla de Somme
+esta batalla dejó un cratér que es el conocido **Lochnagar mine&quot;, inclusive actualmente todavía esta conservado
+y es accesible a público en general. Este cráter es un memento de esa batalla pero en aquel momento era una mina
+que los ingleses prepararon para los alemanes.</p>
+<p><img src="pictures/mine.jpg" alt="Lochnagar Mine"></p>
+<h2 id="d-%C2%BFen-que-lugar-en-espec%C3%ADfico-de-staffordshire-se-encuentra-incialmente-el-protagonista">d. ¿En que lugar en específico de Staffordshire se encuentra incialmente el protagonista?</h2>
+<h2 id="e-la-estaci%C3%B3n-de-tren-de-ashgrove-es-ficticia-pero-por-referencias-se-tiene-certeza-que-era-la-estaci%C3%B3n-de-trentham-coloque-una-imagen-actual-del-sitio-y-describa-un-poco-de-la-historia-de-esa-estaci%C3%B3n">e. La estación de tren de Ashgrove es ficticia pero por referencias se tiene certeza que era la estación de Trentham, coloque una imagen actual del sitio y describa un poco de la historia de esa estación.</h2>
+<p>La línea se construyó para servir a los jardines de Trentham, que el cuarto duque de Sutherland había donado recientemente al distrito del condado de Stoke-on-Trent.
+Durante la guerra, la Cámara de Compensación Central del Banco de Inglaterra fue evacuada de Londres a Trentham Hall  y los trenes de mercancías regulares corrieron a Trentham Park para entregar suministros y los trenes de excursión continuaron durante la guerra.</p>
+<h2 id="trenthamf-%C2%BFcu%C3%A1l-es-la-parada-del-tren-donde-se-tendr%C3%ADa-que-bajar-actualmente-para-visitar-al-sin%C3%B3logo"><img src="pictures/trentham.jpg" alt="Trentham">
+f. ¿Cuál es la parada del tren donde se tendría que bajar actualmente para visitar al Sinólogo?</h2>
+<p>La estación de tren <em>Stock on Trent</em></p>
+<p><img src="pictures/stock-on.trent.png" alt="Stock on Trent">
+<img src="pictures/stock.jpg" alt="Estación de trenes"></p>
+<hr>
+<h2 id="g-%C2%BFde-que-se-trata-el-libro-hung-lu-meng">g. ¿De que se trata el libro Hung Lu Meng?</h2>
+<p>La novela narra los desvelos amorosos de dos personajes excéntricos y apasionados.
+Aunque “Sueño en el Pabellón Rojo” es, en esencia, una historia de amor escrita, según afirma su autor “con palabras falsas y en lengua vulgar”, en realidad es mucho más que eso: es una crítica feroz a las contradicciones y miserias de una nobleza decadente que gobernaba la China de aquella época, y un manifiesto contra la codicia descontrolada y la falta de escrúpulos.</p>
+<h2 id="h-%C2%BFcu%C3%A1l-se-cree-es-el-jard%C3%ADn-en-que-se-inspir%C3%B3-borges-para-este-cuento">h. ¿Cuál se cree es el jardín en que se inspiró Borges para este cuento?</h2>
+<p>Se dice que esta basado en el <strong>Biddulph Grange Garden</strong> ya que este tiene dentro de el varios jardines de distintos tiempos reflejando así el concepto de tiempo, además de que habla
+también de que Borges tal cual no conocía de primera mano este jardin sino que se dice que lo escucho de sus antepasados, el jardín que se anexa abajo tiene un estilo asiatico parecido al que se describe en la historia.</p>
+<p><img src="pictures/biddulph1.jpeg" alt="Biddulph"></p>
+<h2 id="i-haz-una-breve-semblanza-de-tsui-p%C3%AAn">i. Haz una breve semblanza de Ts'ui Pên.</h2>
+<p>Dejando de lado la astronomía, caligrafía, ajedrez, etc. Ts'ui Pên dedico 13 años
+en la creación de un libro y un laberinto, nunca diciendo que ambos eran uno solo
+y que hacían referencia a como el tiempo se bifurcaba como
+las ramas de un arbol creando &quot;historias alternas&quot;, así siendo un laberinto de interminables
+historias que sucedían en paralelo.
+<img src="pictures/semblanza.png" alt="Semblanza"></p>
+<h2 id="j-crea-un-avatar-para-cada-personaje">j. Crea un avatar para cada personaje.</h2>
+<p>En orden de izquierda a derecha son el espia aleman de raíces chinas <em>Yu Tsun</em>, el sinólogo <em>Stephen Albert</em>,
+El bisabuelo de Yu Tsun y creador del Jardin <em>Ts'ui Pên</em>, el capitán <em>Richard Madden</em> y <em>el jefé de Yu Tsun</em>
+cuyo nombre y apariencia son desconocidos.<br>
+<img src="pictures/tsun.png" alt="Yu Tsun" title="Yu Tsun">
+<img src="pictures/albert.png" alt="Stephen Albert" title="Sinólogo Stephen Albert">
+<img src="pictures/bisabuelo.png" alt="Bisabuelo" title="Ts'ui Pên">
+<img src="pictures/irlandes.png" alt="Irlandés" title="Capitán Richard Madden">
+<img src="pictures/jefe.png" alt="Boss" title="El jefe"></p>
+<h2 id="k-%C2%BFcu%C3%A1l-puede-ser-la-principal-analog%C3%ADa-del-jard%C3%ADn-de-senderos-que-se-bifurcan-y-el-dise%C3%B1o-de-juegos">k. ¿Cuál puede ser la principal analogía del jardín de senderos que se bifurcan y el diseño de juegos?</h2>
+<p>El hecho de crear un reto, como mencionan en la lectura, Ts'ui Pên creo la historia para que fuera una adivinanza,
+y pues en el diseño de juegos de igual manera el creador tiene que presentar un desafio o un reto que no necesariamente
+tiene que ser una adivinanza y esto no quiere decir que las historias no tengan relevancia, la tienen porque plantan un contexto,
+permiten comunicar al autor ya sea del juego o a Ts'ui Pên de forma indirecta su ser. Pero no solo Ts'ui Pên sino también Borges
+puede comunicar o transmitir algo a través de esta lectura, puede intentar tergiversar la realidad o jugar a través de la noción
+del tiempo y el paralelismo que puede existir por lo menos a nivel hipótetico.</p>
+<p><strong>Galindo Arroyo Fernando Iván 150300107</strong></p>
+
+</body>
+</html>
